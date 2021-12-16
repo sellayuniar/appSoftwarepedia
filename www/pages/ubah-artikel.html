@@ -1,0 +1,81 @@
+<div data-name="ubah-artikel" class="page">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner color-white bg-color-blue">
+      <div class="title">
+        <a href="#" class="link back"><i class="icon material-icons">chevron_left</i>Back</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- kelola artikel -->
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <form method="POST" class="list form-ajax-submit" id="my-form">
+      <h2 class="text-align-center">Ubah Artikel</h2>
+      <ul>    
+          <input type="hidden" name="uid_artikel" id="uid_artikel" />
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">judul</div>
+              <div class="item-input-wrap">
+                <input type="text" name="ujudul"  id="ujudul" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Penulis</div>
+              <div class="item-input-wrap">
+                <input type="text" name="upenulis" id="upenulis" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">tanggal</div>
+              <div class="item-input-wrap">
+                <input type="text" name="utanggal" id="utanggal" readonly="readonly" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Kategori</div>
+              <div class="item-input-wrap input-dropdown-wrap">
+                <select name="ukategori" id="ukategori">
+                  <option value="" selected>-Pilih</option>
+                  <option value="android">Android</option>
+                  <option value="ios">iOS</option>
+                  <option value="windows">Windows</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Artikel</div>
+              <div class="item-input-wrap">
+                <textarea class="text-editor text-editor-init" id="uisi" name="uisi"> </textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+    <div class="block block-strong row">
+      <div class="col"><input type="button" class="button button-fill color-blue" name="btnUbah" id="btnUbah" value="Simpan Perubahan"></input></div>
+    </div>
+  </div>
+</div>
